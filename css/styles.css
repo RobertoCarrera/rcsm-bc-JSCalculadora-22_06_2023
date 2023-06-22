@@ -1,0 +1,59 @@
+/* Estilos del container entero */
+#calculator_container{
+
+    /* Agrego margin para que se centro verticalmente */
+    margin-top: 5em;
+}
+
+/* Estilos del título */
+#title{
+    /* Le genero espacios para que se vea mejor y más bonito */
+    padding: 1em;
+    margin-bottom: 1em;
+
+    /* Aplico el color de fondo */
+    background-color: rgb(224, 224, 224);
+}
+
+/* Estilos del párrafo donde se mostrarán los números y cálculos */
+#screen{
+
+    padding-right: 0.2em;
+    margin-bottom: 0.5em;
+
+    color: white;
+    background-color: black;
+
+    font-size: 2.5em;
+    text-align: right;
+}
+
+/* Estilos para el container de las teclas */
+#keys{
+
+    height: 450px;
+
+    /* Aplico grid para posicionar las teclas */
+    display: grid;
+    /* 4 teclas de ancho por 4 de alto */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /* El gap para que se separen correctamente */
+    gap: 0.5em;
+}
+
+.keys{
+
+    color: white;
+    background-color: rgb(70, 164, 252);
+
+    font-size: 2em;
+    font-weight: bold;
+
+    border: 5px outset rgb(255, 255, 255);
+}
+
+.keys:hover{
+
+    background-color: rgb(28, 144, 252);
+}
