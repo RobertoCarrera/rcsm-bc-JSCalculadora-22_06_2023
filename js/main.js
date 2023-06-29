@@ -1,20 +1,29 @@
 
+const calculator = (buttonPressed) => {
 
-const addNumber = (num) => {
+    let value = buttonPressed;
+    let screen = document.getElementById("screen");
 
-    digit = num;
-    let updateScreen = document.getElementById("screen");
-    updateScreen.textContent = digit;
-}
+    if (screen.textContent === "0") {
+        
+        screen.textContent = value;
+    }else{
 
-const cleanCalculator = () => {
+        if (value === "=") {
 
-    let updateScreen = document.getElementById("screen");
-    updateScreen.textContent = "0";
-}
+            console.log(screen.textContent);
+            let total = eval((screen.textContent));
+            screen.textContent = total;
+        }else{
 
-const addOperator = (op) => {
+            if (value === "C"){
 
-    let updateScreen = document.getElementById("screen");
-    updateScreen.textContent = op;
+                screen.textContent = "0";
+            }else{
+                screen.textContent += value;
+        }
+    }
+    }
+
+
 }

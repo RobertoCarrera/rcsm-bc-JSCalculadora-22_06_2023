@@ -42,7 +42,7 @@
     gap: 0.5em;
 }
 
-.keys{
+.keys, #tecla{
 
     color: white;
     background-color: rgb(70, 164, 252);
